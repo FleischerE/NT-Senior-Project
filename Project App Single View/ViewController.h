@@ -16,6 +16,8 @@
 
 - (void)firstButtonPressed:(UIButton *)sender;
 
+//- (IBAction)Next;
+
 
 @end
 

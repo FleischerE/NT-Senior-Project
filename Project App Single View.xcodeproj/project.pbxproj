@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A827995B1CBF1C0B0057D5E3 /* AboutElectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82799591CBF1C0B0057D5E3 /* AboutElectionViewController.m */; };
+		A827995C1CBF1C0B0057D5E3 /* AboutElectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A827995A1CBF1C0B0057D5E3 /* AboutElectionViewController.xib */; };
 		A869A3DC1CA3332F00D8C179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DB1CA3332F00D8C179 /* main.m */; };
 		A869A3DF1CA3332F00D8C179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DE1CA3332F00D8C179 /* AppDelegate.m */; };
 		A869A3E21CA3332F00D8C179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3E11CA3332F00D8C179 /* ViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A82799581CBF1C0B0057D5E3 /* AboutElectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutElectionViewController.h; sourceTree = "<group>"; };
+		A82799591CBF1C0B0057D5E3 /* AboutElectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutElectionViewController.m; sourceTree = "<group>"; };
+		A827995A1CBF1C0B0057D5E3 /* AboutElectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutElectionViewController.xib; sourceTree = "<group>"; };
 		A869A3D71CA3332F00D8C179 /* Project App Single View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project App Single View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A869A3DB1CA3332F00D8C179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A869A3DD1CA3332F00D8C179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 				A869A3E01CA3332F00D8C179 /* ViewController.h */,
 				A869A3E11CA3332F00D8C179 /* ViewController.m */,
 				A869A3E31CA3332F00D8C179 /* Main.storyboard */,
+				A82799581CBF1C0B0057D5E3 /* AboutElectionViewController.h */,
+				A82799591CBF1C0B0057D5E3 /* AboutElectionViewController.m */,
+				A827995A1CBF1C0B0057D5E3 /* AboutElectionViewController.xib */,
 				A869A3E61CA3332F00D8C179 /* Assets.xcassets */,
 				A869A3E81CA3332F00D8C179 /* LaunchScreen.storyboard */,
 				A869A3EB1CA3332F00D8C179 /* Info.plist */,
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A869A3EA1CA3332F00D8C179 /* LaunchScreen.storyboard in Resources */,
+				A827995C1CBF1C0B0057D5E3 /* AboutElectionViewController.xib in Resources */,
 				A869A3E71CA3332F00D8C179 /* Assets.xcassets in Resources */,
 				A869A3E51CA3332F00D8C179 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A869A3E21CA3332F00D8C179 /* ViewController.m in Sources */,
+				A827995B1CBF1C0B0057D5E3 /* AboutElectionViewController.m in Sources */,
 				A869A3DF1CA3332F00D8C179 /* AppDelegate.m in Sources */,
 				A869A3DC1CA3332F00D8C179 /* main.m in Sources */,
 			);
@@ -498,6 +508,7 @@
 				A869A4061CA3332F00D8C179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A869A4071CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "Project App Single ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				A869A4091CA3332F00D8C179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A869A40A1CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "Project App Single ViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				A869A40C1CA3332F00D8C179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,11 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    CGRect viewRect = [[UIScreen mainScreen] bounds];
-    self.window = [[UIWindow alloc] initWithFrame:viewRect];
-    self.viewController = [[ViewController alloc] init];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+    
+//    UIViewController *homeTabViewController = [[UIViewController alloc] init];
+//    homeTabViewController.title = @"Home";
+//    homeTabViewController.view.backgroundColor = [UIColor blueColor];
+
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.rootViewController = tabBarController;
+//  [self.window makeKeyAndVisible];
+    
+//    CGRect viewRect = [[UIScreen mainScreen] bounds];
+//    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+//    self.viewController = [[ViewController alloc] init];
+//    self.window.rootViewController = self.viewController;
+//    [self.window makeKeyAndVisible];
+//    
+//    [tabBarController setViewControllers:@[homeTabViewController]];
+    
     return YES;
 }
 
