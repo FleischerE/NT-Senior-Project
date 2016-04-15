@@ -7,13 +7,16 @@
 //
 
 #import "ViewController.h"
-#import "AboutElectionViewController.h"
+//#import "AboutElectionViewController.h"
 
 //@interface ViewController ()
 
 //@end
 
 @implementation ViewController
+
+@synthesize firstPicker;
+@synthesize firstPickerChoices = _firstPickerChoices;
 
 //- (IBAction)Next {
 //    AboutElectionViewController *election = [[AboutElectionViewController alloc] initWtihNibName:nil bundle:nil];
@@ -42,13 +45,35 @@
 //    [aboutAppButton setTitle:@"About 'NAME'" forState:UIControlStateNormal];
 //    aboutAppButton.backgroundColor = [UIColor whiteColor];
 //    [self.view addSubview:aboutAppButton];
-    
+//
 //    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(150, 90, 175, 60)];
 //    nameLabel.text = @"Name of app here!!";
 //    nameLabel.backgroundColor = [UIColor whiteColor];
 //    [self.view addSubview:nameLabel];
+//
+//    [companyButton addTarget:self action:@selector(firstButtonPressed:)forControlEvents:UIControlEventTouchUpInside];
     
-    //[companyButton addTarget:self action:@selector(firstButtonPressed:)forControlEvents:UIControlEventTouchUpInside];
+    UIButton *chooseCan = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    chooseCan.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:chooseCan];
+    
+    _firstPickerChoices = [[NSArray alloc] initWithObjects:@"Democrats", @"Republicans", nil];
+}
+
+- (IBAction)chooseCan:(id)sender {
+    
+}
+
+- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return _firstPickerChoices.count;
+}
+
+- (NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [_firstPickerChoices objectAtIndex:row];
 }
 
 - (void) loadView {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A827995B1CBF1C0B0057D5E3 /* AboutElectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82799591CBF1C0B0057D5E3 /* AboutElectionViewController.m */; };
 		A827995C1CBF1C0B0057D5E3 /* AboutElectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A827995A1CBF1C0B0057D5E3 /* AboutElectionViewController.xib */; };
+		A827995E1CC039110057D5E3 /* poliNTics80.png in Resources */ = {isa = PBXBuildFile; fileRef = A827995D1CC039110057D5E3 /* poliNTics80.png */; };
+		A82799601CC039970057D5E3 /* poliNTics cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = A827995F1CC039970057D5E3 /* poliNTics cropped.png */; };
 		A869A3DC1CA3332F00D8C179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DB1CA3332F00D8C179 /* main.m */; };
 		A869A3DF1CA3332F00D8C179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DE1CA3332F00D8C179 /* AppDelegate.m */; };
 		A869A3E21CA3332F00D8C179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3E11CA3332F00D8C179 /* ViewController.m */; };
@@ -40,6 +42,8 @@
 		A82799581CBF1C0B0057D5E3 /* AboutElectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutElectionViewController.h; sourceTree = "<group>"; };
 		A82799591CBF1C0B0057D5E3 /* AboutElectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutElectionViewController.m; sourceTree = "<group>"; };
 		A827995A1CBF1C0B0057D5E3 /* AboutElectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutElectionViewController.xib; sourceTree = "<group>"; };
+		A827995D1CC039110057D5E3 /* poliNTics80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poliNTics80.png; path = ../../poliNTics80.png; sourceTree = "<group>"; };
+		A827995F1CC039970057D5E3 /* poliNTics cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "poliNTics cropped.png"; path = "../../poliNTics cropped.png"; sourceTree = "<group>"; };
 		A869A3D71CA3332F00D8C179 /* Project App Single View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project App Single View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A869A3DB1CA3332F00D8C179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A869A3DD1CA3332F00D8C179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		A869A3DA1CA3332F00D8C179 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A827995F1CC039970057D5E3 /* poliNTics cropped.png */,
+				A827995D1CC039110057D5E3 /* poliNTics80.png */,
 				A869A3DB1CA3332F00D8C179 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -252,6 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A869A3EA1CA3332F00D8C179 /* LaunchScreen.storyboard in Resources */,
+				A827995E1CC039110057D5E3 /* poliNTics80.png in Resources */,
+				A82799601CC039970057D5E3 /* poliNTics cropped.png in Resources */,
 				A827995C1CBF1C0B0057D5E3 /* AboutElectionViewController.xib in Resources */,
 				A869A3E71CA3332F00D8C179 /* Assets.xcassets in Resources */,
 				A869A3E51CA3332F00D8C179 /* Main.storyboard in Resources */,

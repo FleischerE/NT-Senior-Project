@@ -10,9 +10,14 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) UIButton *companyButton;
-@property (weak, nonatomic) UIButton *aboutSlaveryButton;
-@property (weak, nonatomic) UIButton *aboutAppButton;
+<UIPickerViewDataSource, UIPickerViewDelegate>
+
+//@property (weak, nonatomic) UIButton *companyButton;
+//@property (weak, nonatomic) UIButton *aboutSlaveryButton;
+//@property (weak, nonatomic) UIButton *aboutAppButton;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *firstPicker;
+@property (strong, nonatomic) NSArray *firstPickerChoices;
 
 - (void)firstButtonPressed:(UIButton *)sender;
 
