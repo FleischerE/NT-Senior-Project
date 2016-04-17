@@ -25,9 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    self.view.backgroundColor = [UIColor lightGrayColor];
-//    
+     //Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor lightGrayColor];
+//
 //    UIButton *companyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 //    companyButton.frame = CGRectMake(130, 400, 150, 60);
 //    [companyButton setTitle:@"Choose a candidate" forState:UIControlStateNormal];
@@ -58,6 +58,7 @@
     [self.view addSubview:chooseCan];
     
     _firstPickerChoices = [[NSArray alloc] initWithObjects:@"Democrats", @"Republicans", nil];
+    
 }
 
 - (IBAction)chooseCan:(id)sender {
@@ -76,11 +77,11 @@
     return [_firstPickerChoices objectAtIndex:row];
 }
 
-- (void) loadView {
-    CGRect viewRect = [[UIScreen mainScreen] bounds];
-    UIView *view = [[UIView alloc] initWithFrame:viewRect];
-    self.view = view;
-}
+//- (void) loadView {
+//    CGRect viewRect = [[UIScreen mainScreen] bounds];
+//    UIView *view = [[UIView alloc] initWithFrame:viewRect];
+//    self.view = view;
+//}
 
 - (void)firstButtonPressed:(UIButton *)sender {
     
