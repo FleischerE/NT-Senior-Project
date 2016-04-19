@@ -10,18 +10,17 @@
 //#import "AboutElectionViewController.h"
 
 //@interface ViewController ()
-
+//{
+//    NSArray *_firstPickerData;
+//}
 //@end
 
 @implementation ViewController
 
-@synthesize firstPicker;
-@synthesize firstPickerChoices = _firstPickerChoices;
+//@synthesize firstPicker;
+//@synthesize firstPickerChoices = _firstPickerChoices;
 
-//- (IBAction)Next {
-//    AboutElectionViewController *election = [[AboutElectionViewController alloc] initWtihNibName:nil bundle:nil];
-//    [self presentViewController:election animated:NO completion:NULL];
-//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,25 +56,47 @@
     chooseCan.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:chooseCan];
     
-    _firstPickerChoices = [[NSArray alloc] initWithObjects:@"Democrats", @"Republicans", nil];
+//    _firstPickerChoices = [[NSArray alloc] initWithObjects:@"Democrats", @"Republicans", nil];
+    
+//    _firstPickerData = @[@"Democrats", @"Republicans"];
+//    
+//    self.pickerOne.dataSource = self;
+//    self.pickerOne.delegate = self;
     
 }
+
+//- (IBAction)Next {
+//    AboutElectionViewController *election = [[AboutElectionViewController alloc] initWtihNibName:nil bundle:nil];
+//    [self presentViewController:election animated:NO completion:NULL];
+//}
+
 
 - (IBAction)chooseCan:(id)sender {
     
 }
 
-- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 1;
-}
+//- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+//    return 1;
+//}
+//
+//- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+//    return _firstPickerChoices.count;
+//}
+//
+//- (NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//    return [_firstPickerChoices objectAtIndex:row];
+//}
+//
+//-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row
+//      inComponent:(NSInteger)component
+//{
+//    
+//}
 
-- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return _firstPickerChoices.count;
-}
 
-- (NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [_firstPickerChoices objectAtIndex:row];
-}
+
+
+
 
 //- (void) loadView {
 //    CGRect viewRect = [[UIScreen mainScreen] bounds];
@@ -95,5 +116,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+//{
+//    return 1;
+//}
+//
+//- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//{
+//    return _firstPickerData[row];
+//}
+//
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+//{
+//    
+//}
 
 @end
