@@ -1,5 +1,5 @@
 //
-//  AboutElectionViewController.h
+//  AboutAppViewController.h
 //  Project App Single View
 //
 //  Created by julie fleischer on 4/20/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutElectionViewController : UIViewController
+@interface AboutAppViewController : UIViewController
 
 @end

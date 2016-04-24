@@ -62,7 +62,7 @@
         <!--Choose Candidate-->
         <scene sceneID="a46-k7-PJv">
             <objects>
-                <viewController id="4KA-OH-iFH" userLabel="Choose Candidate" sceneMemberID="viewController">
+                <viewController id="4KA-OH-iFH" userLabel="Choose Candidate" customClass="ChooseCandidateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="INH-qi-lRx"/>
                         <viewControllerLayoutGuide type="bottom" id="oHh-u3-ZuW"/>
@@ -111,10 +111,17 @@
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9y3-im-fxr" userLabel="firstPicker">
                                 <rect key="frame" x="34" y="58" width="253" height="142"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4KA-OH-iFH" id="dE0-lK-Vbk"/>
+                                    <outlet property="delegate" destination="4KA-OH-iFH" id="k8T-Vr-1vd"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="firstPicker" destination="9y3-im-fxr" id="6bV-7t-Xss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aa6-uK-2TH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +130,7 @@
         <!--About Election-->
         <scene sceneID="evd-JB-JJU">
             <objects>
-                <viewController id="uuR-jv-7VQ" userLabel="About Election" sceneMemberID="viewController">
+                <viewController id="uuR-jv-7VQ" userLabel="About Election" customClass="AboutElectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1zn-6H-ba0"/>
                         <viewControllerLayoutGuide type="bottom" id="Yby-UZ-Yu1"/>
@@ -164,7 +171,7 @@
         <!--About poliNTics-->
         <scene sceneID="yDs-fm-1qC">
             <objects>
-                <viewController id="brq-Uj-wYO" userLabel="About poliNTics" sceneMemberID="viewController">
+                <viewController id="brq-Uj-wYO" userLabel="About poliNTics" customClass="AboutAppViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qU3-le-dgf"/>
                         <viewControllerLayoutGuide type="bottom" id="MLv-JO-pIn"/>

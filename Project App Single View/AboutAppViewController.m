@@ -1,18 +1,18 @@
 //
-//  AboutElectionViewController.m
+//  AboutAppViewController.m
 //  Project App Single View
 //
 //  Created by julie fleischer on 4/20/16.
 //  Copyright © 2016 Eliana Fleischer. All rights reserved.
 //
 
-#import "AboutElectionViewController.h"
+#import "AboutAppViewController.h"
 
-@interface AboutElectionViewController ()
+@interface AboutAppViewController ()
 
 @end
 
-@implementation AboutElectionViewController
+@implementation AboutAppViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

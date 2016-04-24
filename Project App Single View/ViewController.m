@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+
 //#import "AboutElectionViewController.h"
 
 //@interface ViewController ()
@@ -15,17 +16,13 @@
 //}
 //@end
 
-@implementation ViewController
-
-//@synthesize firstPicker;
-//@synthesize firstPickerChoices = _firstPickerChoices;
-
+@implementation UIViewController
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+ //   [super viewDidLoad];
      //Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor lightGrayColor];
+//    self.view.backgroundColor = [UIColor lightGrayColor];
 //
 //    UIButton *companyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 //    companyButton.frame = CGRectMake(130, 400, 150, 60);
@@ -52,16 +49,12 @@
 //
 //    [companyButton addTarget:self action:@selector(firstButtonPressed:)forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *chooseCan = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    chooseCan.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:chooseCan];
+//    UIButton *chooseCan = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    chooseCan.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:chooseCan];
     
 //    _firstPickerChoices = [[NSArray alloc] initWithObjects:@"Democrats", @"Republicans", nil];
     
-//    _firstPickerData = @[@"Democrats", @"Republicans"];
-//    
-//    self.pickerOne.dataSource = self;
-//    self.pickerOne.delegate = self;
     
 }
 
@@ -113,23 +106,9 @@
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+  //  [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-//- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-//{
-//    return 1;
-//}
-//
-//- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-//{
-//    return _firstPickerData[row];
-//}
-//
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-//{
-//    
-//}
 
 @end
