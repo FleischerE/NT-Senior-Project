@@ -10,13 +10,8 @@
 
 //#import "AboutElectionViewController.h"
 
-//@interface ViewController ()
-//{
-//    NSArray *_firstPickerData;
-//}
-//@end
 
-@implementation UIViewController
+@implementation ViewController
 
 
 - (void)viewDidLoad {

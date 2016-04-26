@@ -11,7 +11,7 @@
 @interface ChooseCandidateViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 {
     IBOutlet UIPickerView *firstPicker;
+    IBOutlet UIPickerView *secondPicker;
 }
-
 
 @end

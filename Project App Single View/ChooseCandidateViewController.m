@@ -15,6 +15,9 @@
 @end
 
 NSArray *_firstPickerChoices;
+NSArray *_secondPickerDemocrats;
+NSArray *_secondPickerRepublicans;
+NSString *partySelected;
 
 @implementation ChooseCandidateViewController
 
@@ -27,6 +30,13 @@ NSArray *_firstPickerChoices;
     firstPicker.dataSource = self;
     
     _firstPickerChoices = @[@"Democrats", @"Republicans"];
+    
+    secondPicker.delegate = self;
+    secondPicker.dataSource = self;
+    
+    _secondPickerDemocrats = @[@"Hillary Clinton", @"Bernie Sanders"];
+    _secondPickerRepublicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
+    
     
 }
 
@@ -56,21 +66,53 @@ NSArray *_firstPickerChoices;
 
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)componen
 {
-    return _firstPickerChoices[row];
+    if ([pickerView isEqual:firstPicker])
+    {
+        return _firstPickerChoices[row];
+    }
+    if ([pickerView isEqual:secondPicker])
+    {
+        partySelected = [_firstPickerChoices objectAtIndex:row];
+        
+        if ([partySelected isEqualToString:@"Democrats"])
+        {
+            return _secondPickerDemocrats[row];
+        }
+        if ([partySelected isEqualToString:@"Republicans"])
+        {
+            return _secondPickerRepublicans[row];
+        }
+    }
+    return 0;
 }
-
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return _firstPickerChoices.count;
-}
-
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
-    
+    partySelected = [_firstPickerChoices objectAtIndex:row];
 }
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    if ([pickerView isEqual:firstPicker])
+    {
+        return _firstPickerChoices.count;
+    }
+    if ([pickerView isEqual:secondPicker])
+    {
+        //partySelected = [_firstPickerChoices objectAtIndex:row];
+        
+        if ([partySelected isEqualToString:@"Democrats"])
+        {
+            return _secondPickerDemocrats.count;
+        }
+        if ([partySelected isEqualToString:@"Republicans"])
+        {
+            return _secondPickerRepublicans.count;
+        }
+    }
+    return 0;
+}
+
 
 
 @end
