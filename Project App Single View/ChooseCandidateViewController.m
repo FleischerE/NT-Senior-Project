@@ -37,6 +37,8 @@ NSString *partySelected;
     _secondPickerDemocrats = @[@"Hillary Clinton", @"Bernie Sanders"];
     _secondPickerRepublicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
     
+    partySelected = @"Democrats";
+    
     
 }
 
@@ -89,6 +91,7 @@ NSString *partySelected;
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     partySelected = [_firstPickerChoices objectAtIndex:row];
+    [secondPicker reloadAllComponents];
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
@@ -100,6 +103,7 @@ NSString *partySelected;
     if ([pickerView isEqual:secondPicker])
     {
         //partySelected = [_firstPickerChoices objectAtIndex:row];
+        //partySelected = @"Democrats";
         
         if ([partySelected isEqualToString:@"Democrats"])
         {
