@@ -74,7 +74,7 @@ NSString *partySelected;
     }
     if ([pickerView isEqual:secondPicker])
     {
-        partySelected = [_firstPickerChoices objectAtIndex:row];
+        //partySelected = [_firstPickerChoices objectAtIndex:row];
         
         if ([partySelected isEqualToString:@"Democrats"])
         {
@@ -91,7 +91,8 @@ NSString *partySelected;
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     partySelected = [_firstPickerChoices objectAtIndex:row];
-    [secondPicker reloadAllComponents];
+    if (partySelected)
+        [secondPicker reloadAllComponents];
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
