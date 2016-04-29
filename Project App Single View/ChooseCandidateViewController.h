@@ -10,8 +10,11 @@
 
 @interface ChooseCandidateViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 {
-    IBOutlet UIPickerView *firstPicker;
-    IBOutlet UIPickerView *secondPicker;
+    //IBOutlet UIPickerView *firstPicker;
+    //IBOutlet UIPickerView *secondPicker;
 }
+
+@property (strong, nonatomic) IBOutlet UIPickerView *firstPicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *secondPicker;
 
 @end

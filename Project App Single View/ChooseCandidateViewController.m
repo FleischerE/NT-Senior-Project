@@ -12,12 +12,20 @@
 
 @interface ChooseCandidateViewController ()
 
+@property NSArray *firstPickerChoices;
+@property NSArray *secondPickerChoices;
+
+@property NSArray *democrats;
+@property NSArray *republicans;
+
+@property (nonatomic) NSString *partySelected;
+
 @end
 
-NSArray *_firstPickerChoices;
-NSArray *_secondPickerDemocrats;
-NSArray *_secondPickerRepublicans;
-NSString *partySelected;
+//NSArray *_firstPickerChoices;
+//NSArray *_secondPickerDemocrats;
+//NSArray *_secondPickerRepublicans;
+//NSString *partySelected;
 
 @implementation ChooseCandidateViewController
 
@@ -26,19 +34,31 @@ NSString *partySelected;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    firstPicker.delegate = self;
-    firstPicker.dataSource = self;
+    self.firstPicker.delegate = self;
+    self.firstPicker.dataSource = self;
     
-    _firstPickerChoices = @[@"Democrats", @"Republicans"];
+    self.firstPickerChoices = @[@"Democrats", @"Republicans"];
     
-    secondPicker.delegate = self;
-    secondPicker.dataSource = self;
+    self.secondPicker.delegate = self;
+    self.secondPicker.dataSource = self;
     
-    _secondPickerDemocrats = @[@"Hillary Clinton", @"Bernie Sanders"];
-    _secondPickerRepublicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
+    self.democrats = @[@"Hillary Clinton", @"Bernie Sanders"];
+    self.republicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
     
-    partySelected = @"Democrats";
+    self.partySelected = @"Democrats";
     
+//    firstPicker.delegate = self;
+//    firstPicker.dataSource = self;
+//    
+//    _firstPickerChoices = @[@"Democrats", @"Republicans"];
+//    
+//    secondPicker.delegate = self;
+//    secondPicker.dataSource = self;
+//    
+//    _secondPickerDemocrats = @[@"Hillary Clinton", @"Bernie Sanders"];
+//    _secondPickerRepublicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
+//    
+//    partySelected = @"Democrats";
     
 }
 
@@ -68,54 +88,86 @@ NSString *partySelected;
 
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)componen
 {
-    if ([pickerView isEqual:firstPicker])
+    if ([pickerView isEqual:self.firstPicker])
     {
-        return _firstPickerChoices[row];
+        return self.firstPickerChoices[row];
     }
-    if ([pickerView isEqual:secondPicker])
+    else
     {
-        //partySelected = [_firstPickerChoices objectAtIndex:row];
-        
-        if ([partySelected isEqualToString:@"Democrats"])
-        {
-            return _secondPickerDemocrats[row];
-        }
-        if ([partySelected isEqualToString:@"Republicans"])
-        {
-            return _secondPickerRepublicans[row];
-        }
+        return self.secondPickerChoices[row];
     }
-    return 0;
+    
+//    if ([pickerView isEqual:secondPicker])
+//    {
+//        //partySelected = [_firstPickerChoices objectAtIndex:row];
+//        
+//        if ([partySelected isEqualToString:@"Democrats"])
+//        {
+//            return _secondPickerDemocrats[row];
+//        }
+//        if ([partySelected isEqualToString:@"Republicans"])
+//        {
+//            return _secondPickerRepublicans[row];
+//        }
+//    }
+//    return 0;
+    
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    partySelected = [_firstPickerChoices objectAtIndex:row];
-    if (partySelected)
-        [secondPicker reloadAllComponents];
+    self.partySelected = [_firstPickerChoices objectAtIndex:row];
+    [self.secondPicker reloadAllComponents];
+    
+//    partySelected = [_firstPickerChoices objectAtIndex:row];
+//    if (partySelected)
+//        [secondPicker reloadAllComponents];
+
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    if ([pickerView isEqual:firstPicker])
+    if ([pickerView isEqual:self.firstPicker])
     {
-        return _firstPickerChoices.count;
+        return self.firstPickerChoices.count;
     }
-    if ([pickerView isEqual:secondPicker])
+    else
     {
-        //partySelected = [_firstPickerChoices objectAtIndex:row];
-        //partySelected = @"Democrats";
-        
-        if ([partySelected isEqualToString:@"Democrats"])
-        {
-            return _secondPickerDemocrats.count;
-        }
-        if ([partySelected isEqualToString:@"Republicans"])
-        {
-            return _secondPickerRepublicans.count;
-        }
+        return self.secondPickerChoices.count;
     }
-    return 0;
+    
+//    if ([pickerView isEqual:secondPicker])
+//    {
+//        //partySelected = [_firstPickerChoices objectAtIndex:row];
+//        //partySelected = @"Democrats";
+//        
+//        if ([partySelected isEqualToString:@"Democrats"])
+//        {
+//            return _secondPickerDemocrats.count;
+//        }
+//        if ([partySelected isEqualToString:@"Republicans"])
+//        {
+//            return _secondPickerRepublicans.count;
+//        }
+//    }
+//    return 0;
+    
+}
+
+- (void)setPartySelected:(NSString *)partySelected
+{
+    _partySelected = partySelected;
+    
+    if([partySelected isEqualToString:@"Democrats"])
+    {
+        self.secondPickerChoices = self.democrats;
+    }
+    else
+    {
+        self.secondPickerChoices = self.republicans;
+    }
+    
+    [self.secondPicker reloadAllComponents];
 }
 
 
