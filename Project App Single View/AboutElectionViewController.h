@@ -10,4 +10,6 @@
 
 @interface AboutElectionViewController : UIViewController
 
+- (IBAction)linkButton;
+
 @end

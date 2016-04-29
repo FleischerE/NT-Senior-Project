@@ -116,8 +116,11 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.partySelected = [_firstPickerChoices objectAtIndex:row];
-    [self.secondPicker reloadAllComponents];
+    if ([pickerView isEqual:self.firstPicker])
+    {
+        self.partySelected = [_firstPickerChoices objectAtIndex:row];
+        [self.secondPicker reloadAllComponents];
+    }
     
 //    partySelected = [_firstPickerChoices objectAtIndex:row];
 //    if (partySelected)

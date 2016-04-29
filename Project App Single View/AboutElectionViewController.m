@@ -29,6 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)linkButton
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.bbc.com/news/world-us-canada-31120958"]];
+}
+
+
 /*
 #pragma mark - Navigation
 
