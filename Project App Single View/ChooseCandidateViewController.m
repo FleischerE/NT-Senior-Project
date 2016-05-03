@@ -8,6 +8,7 @@
 
 
 #import "ChooseCandidateViewController.h"
+#import "CandidateStatsViewController.h"
 
 
 @interface ChooseCandidateViewController ()
@@ -19,6 +20,7 @@
 @property NSArray *republicans;
 
 @property (nonatomic) NSString *partySelected;
+//@property (nonatomic) NSString *candidateSelected;
 
 @end
 
@@ -59,6 +61,7 @@
 //    _secondPickerRepublicans = @[@"Ted Cruz", @"John Kasich", @"Donald Trump"];
 //    
 //    partySelected = @"Democrats";
+    
     
 }
 
@@ -125,6 +128,8 @@
 //    partySelected = [_firstPickerChoices objectAtIndex:row];
 //    if (partySelected)
 //        [secondPicker reloadAllComponents];
+    
+//    self.candidateSelected = [_secondPickerChoices objectAtIndex:row];
 
 }
 
@@ -173,6 +178,14 @@
     [self.secondPicker reloadAllComponents];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CandidateStatsViewController *nextController = (CandidateStatsViewController *)segue.destinationViewController;
+    //nextController.candidateSelected = [self.secondPicker selectedRowInComponent:0];
+    NSInteger selectedCandidateNumber = [self.secondPicker selectedRowInComponent:0];
+    NSString *selectedCandidateName = self.secondPickerChoices[selectedCandidateNumber];
+    nextController.candidateSelected = selectedCandidateName;
+}
 
 
 @end

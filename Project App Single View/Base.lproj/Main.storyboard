@@ -114,6 +114,9 @@
                                 <state key="normal" title="GO">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6F8-0g-9th" kind="modal" animates="NO" id="IwK-pw-GfH"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9y3-im-fxr" userLabel="firstPicker">
                                 <rect key="frame" x="0.0" y="66" width="320" height="174"/>
@@ -171,7 +174,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7o4-IA-hHq">
                                 <rect key="frame" x="9" y="80" width="303" height="373"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The field started with 16 republican candidates for president, but has narrowed down to the final three: Donald Trump, Ted Cruz, and John Kasich. 
+                                <string key="text">The field started with 16 republican candidates for president, but has narrowed down to the final three: Donald Trump, Ted Cruz, and John Kasich. 
 
 The democratic field began with only five candidates, and has since dropped to two: Hillary Clinton and Bernie Sanders.
 
@@ -204,7 +207,7 @@ Bernie Sanders:
 - Is an independent senator for Vermont and caucuses with the Democrats
 - Identifies as a democratic socialist
 - Has been in Congress for more than 20 years
-- Is a critic of the current campaign finance system, including the Citizens United decision</mutableString>
+- Is a critic of the current campaign finance system, including the Citizens United decision</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -257,11 +260,11 @@ Bernie Sanders:
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-LP-9ZA">
                                 <rect key="frame" x="14" y="76" width="293" height="418"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The data for poliNTics was gathered in a survey that was distributed to the senior class. There were just over 200 responses to the survey, which is a large sample size of our class of 1100 students. The survey asked two questions: "In the upcoming presidential election, do you think you will vote Republican or Democrat?" and "Which candidate would you like to vote for in the upcoming presidential election?" Each question was mutually exclusive, and the results of the second question are portrayed in the app, with the percentage for all the candidates totaling 100%. 
+                                <string key="text">The data for poliNTics was gathered in a survey that was distributed to the senior class. There were just over 200 responses to the survey, which is a large sample size of our class of 1100 students. The survey asked two questions: "In the upcoming presidential election, do you think you will vote Republican or Democrat?" and "Which candidate would you like to vote for in the upcoming presidential election?" Each question was mutually exclusive, and the results of the second question are portrayed in the app, with the percentage for all the candidates totaling 100%. 
 
 poliNTics is was created by Eliana Fleischer, as part of her Senior Project at New Trier High School. Senior Project is a chance for seniors to pursue their interests by creating a project that they will complete over the last four weeks of their senior year. 
 
-Eliana’s in-school mentor was Ryan Dunn, and out-of-school community sponsor was Joe VanDeventer. She’d like to extend her gratitude to both of them for their help. She particularly wants to thank Mr. VanDeventer for the time he took to walk her through certain parts of code and to help fix her code when her app would crash.</mutableString>
+Eliana’s in-school mentor was Ryan Dunn, and out-of-school community sponsor was Joe VanDeventer. She’d like to extend her gratitude to both of them for their help. She particularly wants to thank Mr. VanDeventer for the time he took to walk her through certain parts of code and to help fix her code when her app would crash.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -274,11 +277,61 @@ Eliana’s in-school mentor was Ryan Dunn, and out-of-school community sponsor w
             </objects>
             <point key="canvasLocation" x="337" y="-85"/>
         </scene>
+        <!--Candidate Stats View Controller-->
+        <scene sceneID="ch8-0D-c9s">
+            <objects>
+                <viewController id="6F8-0g-9th" customClass="CandidateStatsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvn-uR-iiq"/>
+                        <viewControllerLayoutGuide type="bottom" id="RQv-lS-eeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmt-tz-mup">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAu-16-Hfm">
+                                <rect key="frame" x="40" y="111" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QJp-uz-brJ">
+                                <rect key="frame" x="40" y="314" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKh-nS-NCF" userLabel="homeElection">
+                                <rect key="frame" x="230" y="507" width="70" height="41"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x2A-qN-s8W" kind="modal" id="RwJ-Fa-qaL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4D-2j-5Ik">
+                                <rect key="frame" x="53" y="33" width="214" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="l4D-2j-5Ik" id="Nh8-s7-kaS"/>
+                        <outlet property="pic" destination="tAu-16-Hfm" id="9v0-1d-sZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4q3-fe-DVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="-505"/>
+        </scene>
     </scenes>
     <resources>
         <image name="poliNTics cropped.png" width="468" height="468"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QvO-03-KSy"/>
+        <segue reference="RwJ-Fa-qaL"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>

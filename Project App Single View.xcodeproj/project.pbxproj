@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A827995E1CC039110057D5E3 /* poliNTics80.png in Resources */ = {isa = PBXBuildFile; fileRef = A827995D1CC039110057D5E3 /* poliNTics80.png */; };
 		A82799601CC039970057D5E3 /* poliNTics cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = A827995F1CC039970057D5E3 /* poliNTics cropped.png */; };
 		A82799661CC847B10057D5E3 /* AboutElectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82799651CC847B10057D5E3 /* AboutElectionViewController.m */; };
 		A82799691CC847DA0057D5E3 /* AboutAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82799681CC847DA0057D5E3 /* AboutAppViewController.m */; };
 		A827996C1CCA7B250057D5E3 /* ChooseCandidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A827996B1CCA7B250057D5E3 /* ChooseCandidateViewController.m */; };
+		A827996F1CD81FAE0057D5E3 /* CandidateStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A827996E1CD81FAE0057D5E3 /* CandidateStatsViewController.m */; };
+		A82799711CD85ACC0057D5E3 /* 4percent.png in Resources */ = {isa = PBXBuildFile; fileRef = A82799701CD85ACC0057D5E3 /* 4percent.png */; };
+		A82799731CD85AD30057D5E3 /* 20percent.png in Resources */ = {isa = PBXBuildFile; fileRef = A82799721CD85AD30057D5E3 /* 20percent.png */; };
+		A82799751CD85AD80057D5E3 /* 38percent.png in Resources */ = {isa = PBXBuildFile; fileRef = A82799741CD85AD80057D5E3 /* 38percent.png */; };
+		A82799771CD85ADE0057D5E3 /* 34percent.png in Resources */ = {isa = PBXBuildFile; fileRef = A82799761CD85ADE0057D5E3 /* 34percent.png */; };
 		A869A3DC1CA3332F00D8C179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DB1CA3332F00D8C179 /* main.m */; };
 		A869A3DF1CA3332F00D8C179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3DE1CA3332F00D8C179 /* AppDelegate.m */; };
 		A869A3E21CA3332F00D8C179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869A3E11CA3332F00D8C179 /* ViewController.m */; };
@@ -40,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A827995D1CC039110057D5E3 /* poliNTics80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poliNTics80.png; path = ../../poliNTics80.png; sourceTree = "<group>"; };
 		A827995F1CC039970057D5E3 /* poliNTics cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "poliNTics cropped.png"; path = "../../poliNTics cropped.png"; sourceTree = "<group>"; };
 		A82799641CC847B10057D5E3 /* AboutElectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutElectionViewController.h; sourceTree = "<group>"; };
 		A82799651CC847B10057D5E3 /* AboutElectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutElectionViewController.m; sourceTree = "<group>"; };
@@ -48,6 +51,12 @@
 		A82799681CC847DA0057D5E3 /* AboutAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutAppViewController.m; sourceTree = "<group>"; };
 		A827996A1CCA7B250057D5E3 /* ChooseCandidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseCandidateViewController.h; sourceTree = "<group>"; };
 		A827996B1CCA7B250057D5E3 /* ChooseCandidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseCandidateViewController.m; sourceTree = "<group>"; };
+		A827996D1CD81FAE0057D5E3 /* CandidateStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateStatsViewController.h; sourceTree = "<group>"; };
+		A827996E1CD81FAE0057D5E3 /* CandidateStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateStatsViewController.m; sourceTree = "<group>"; };
+		A82799701CD85ACC0057D5E3 /* 4percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4percent.png; sourceTree = "<group>"; };
+		A82799721CD85AD30057D5E3 /* 20percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20percent.png; sourceTree = "<group>"; };
+		A82799741CD85AD80057D5E3 /* 38percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38percent.png; sourceTree = "<group>"; };
+		A82799761CD85ADE0057D5E3 /* 34percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34percent.png; sourceTree = "<group>"; };
 		A869A3D71CA3332F00D8C179 /* Project App Single View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project App Single View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A869A3DB1CA3332F00D8C179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A869A3DD1CA3332F00D8C179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +138,8 @@
 				A82799681CC847DA0057D5E3 /* AboutAppViewController.m */,
 				A827996A1CCA7B250057D5E3 /* ChooseCandidateViewController.h */,
 				A827996B1CCA7B250057D5E3 /* ChooseCandidateViewController.m */,
+				A827996D1CD81FAE0057D5E3 /* CandidateStatsViewController.h */,
+				A827996E1CD81FAE0057D5E3 /* CandidateStatsViewController.m */,
 			);
 			path = "Project App Single View";
 			sourceTree = "<group>";
@@ -137,7 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				A827995F1CC039970057D5E3 /* poliNTics cropped.png */,
-				A827995D1CC039110057D5E3 /* poliNTics80.png */,
+				A82799701CD85ACC0057D5E3 /* 4percent.png */,
+				A82799761CD85ADE0057D5E3 /* 34percent.png */,
+				A82799741CD85AD80057D5E3 /* 38percent.png */,
+				A82799721CD85AD30057D5E3 /* 20percent.png */,
 				A869A3DB1CA3332F00D8C179 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -264,11 +278,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82799771CD85ADE0057D5E3 /* 34percent.png in Resources */,
 				A869A3EA1CA3332F00D8C179 /* LaunchScreen.storyboard in Resources */,
-				A827995E1CC039110057D5E3 /* poliNTics80.png in Resources */,
+				A82799751CD85AD80057D5E3 /* 38percent.png in Resources */,
 				A82799601CC039970057D5E3 /* poliNTics cropped.png in Resources */,
 				A869A3E71CA3332F00D8C179 /* Assets.xcassets in Resources */,
+				A82799711CD85ACC0057D5E3 /* 4percent.png in Resources */,
 				A869A3E51CA3332F00D8C179 /* Main.storyboard in Resources */,
+				A82799731CD85AD30057D5E3 /* 20percent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +316,7 @@
 				A827996C1CCA7B250057D5E3 /* ChooseCandidateViewController.m in Sources */,
 				A869A3DC1CA3332F00D8C179 /* main.m in Sources */,
 				A82799661CC847B10057D5E3 /* AboutElectionViewController.m in Sources */,
+				A827996F1CD81FAE0057D5E3 /* CandidateStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
