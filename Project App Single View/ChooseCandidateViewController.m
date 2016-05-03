@@ -181,10 +181,11 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     CandidateStatsViewController *nextController = (CandidateStatsViewController *)segue.destinationViewController;
-    //nextController.candidateSelected = [self.secondPicker selectedRowInComponent:0];
     NSInteger selectedCandidateNumber = [self.secondPicker selectedRowInComponent:0];
     NSString *selectedCandidateName = self.secondPickerChoices[selectedCandidateNumber];
     nextController.candidateSelected = selectedCandidateName;
+    
+    nextController.selectedParty = _partySelected;
 }
 
 

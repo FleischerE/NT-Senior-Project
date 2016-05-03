@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *candidateName;
 @property NSString *candidateSelected;
+@property NSString *selectedParty;
 
 //-(IBAction)changetext;
 

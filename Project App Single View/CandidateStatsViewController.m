@@ -15,6 +15,8 @@
     //IBOutlet UIImage *picture;
     
     __weak IBOutlet UIImageView *pic;
+    
+    __weak IBOutlet UITextView *infoText;
 }
 
 @end
@@ -31,22 +33,48 @@
     {
         UIImage *image = [UIImage imageNamed:@"20percent"];
         [pic setImage:image];
+        
+        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: Ted Cruz and Donald Trump.";
     }
     else if ([_candidateSelected isEqualToString:@"Hillary Clinton"])
     {
         UIImage *image = [UIImage imageNamed:@"34percent"];
         [pic setImage:image];
+        
+        infoText.text = @"Her first hurdle in the race for president is the candidate from her own party: Bernie Sanders.";
     }
     else if ([_candidateSelected isEqualToString:@"Bernie Sanders"])
     {
         UIImage *image = [UIImage imageNamed:@"38percent"];
         [pic setImage:image];
+        
+        infoText.text = @"His first hurdle in the race for president is the candidate from his own party: Hillary Clinton.";
     }
-    else
+    else if ([_candidateSelected isEqualToString:@"Ted Cruz"])
     {
         UIImage *image = [UIImage imageNamed:@"4percent"];
         [pic setImage:image];
+        
+        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: John Kasich and Donald Trump.";
     }
+    else  //Donald Trump
+    {
+        UIImage *image = [UIImage imageNamed:@"4percent"];
+        [pic setImage:image];
+        
+        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: Ted Cruz and John Kasich.";
+    }
+    
+    infoText.font = [UIFont systemFontOfSize:17];
+    
+//    if ([_selectedParty isEqualToString:@"Democrats"])
+//    {
+//        infoText.text = @"";
+//    }
+//    else
+//    {
+//        infoText.text = @"";
+//    }
     
 }
 
