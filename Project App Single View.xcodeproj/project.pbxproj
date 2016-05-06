@@ -57,7 +57,7 @@
 		A82799721CD85AD30057D5E3 /* 20percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20percent.png; sourceTree = "<group>"; };
 		A82799741CD85AD80057D5E3 /* 38percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38percent.png; sourceTree = "<group>"; };
 		A82799761CD85ADE0057D5E3 /* 34percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34percent.png; sourceTree = "<group>"; };
-		A869A3D71CA3332F00D8C179 /* Project App Single View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project App Single View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A869A3D71CA3332F00D8C179 /* poliNTics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poliNTics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A869A3DB1CA3332F00D8C179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A869A3DD1CA3332F00D8C179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A869A3DE1CA3332F00D8C179 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		A869A3D81CA3332F00D8C179 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A869A3D71CA3332F00D8C179 /* Project App Single View.app */,
+				A869A3D71CA3332F00D8C179 /* poliNTics.app */,
 				A869A3F01CA3332F00D8C179 /* Project App Single ViewTests.xctest */,
 				A869A3FB1CA3332F00D8C179 /* Project App Single ViewUITests.xctest */,
 			);
@@ -178,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A869A3D61CA3332F00D8C179 /* Project App Single View */ = {
+		A869A3D61CA3332F00D8C179 /* poliNTics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A869A4041CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "Project App Single View" */;
+			buildConfigurationList = A869A4041CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "poliNTics" */;
 			buildPhases = (
 				A869A3D31CA3332F00D8C179 /* Sources */,
 				A869A3D41CA3332F00D8C179 /* Frameworks */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = "Project App Single View";
+			name = poliNTics;
 			productName = "Project App Single View";
-			productReference = A869A3D71CA3332F00D8C179 /* Project App Single View.app */;
+			productReference = A869A3D71CA3332F00D8C179 /* poliNTics.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A869A3EF1CA3332F00D8C179 /* Project App Single ViewTests */ = {
@@ -266,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A869A3D61CA3332F00D8C179 /* Project App Single View */,
+				A869A3D61CA3332F00D8C179 /* poliNTics */,
 				A869A3EF1CA3332F00D8C179 /* Project App Single ViewTests */,
 				A869A3FA1CA3332F00D8C179 /* Project App Single ViewUITests */,
 			);
@@ -341,12 +341,12 @@
 /* Begin PBXTargetDependency section */
 		A869A3F21CA3332F00D8C179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A869A3D61CA3332F00D8C179 /* Project App Single View */;
+			target = A869A3D61CA3332F00D8C179 /* poliNTics */;
 			targetProxy = A869A3F11CA3332F00D8C179 /* PBXContainerItemProxy */;
 		};
 		A869A3FD1CA3332F00D8C179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A869A3D61CA3332F00D8C179 /* Project App Single View */;
+			target = A869A3D61CA3332F00D8C179 /* poliNTics */;
 			targetProxy = A869A3FC1CA3332F00D8C179 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -461,7 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Project App Single View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Eliana-Fleischer.Project-App-Single-View";
+				PRODUCT_BUNDLE_IDENTIFIER = poliNTics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -472,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Project App Single View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Eliana-Fleischer.Project-App-Single-View";
+				PRODUCT_BUNDLE_IDENTIFIER = poliNTics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A869A4041CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "Project App Single View" */ = {
+		A869A4041CA3332F00D8C179 /* Build configuration list for PBXNativeTarget "poliNTics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A869A4051CA3332F00D8C179 /* Debug */,

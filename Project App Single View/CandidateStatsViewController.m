@@ -34,35 +34,35 @@
         UIImage *image = [UIImage imageNamed:@"20percent"];
         [pic setImage:image];
         
-        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: Ted Cruz and Donald Trump.";
+        infoText.text = @"John Kasich has just dropped out of the presidential election.";
     }
     else if ([_candidateSelected isEqualToString:@"Hillary Clinton"])
     {
         UIImage *image = [UIImage imageNamed:@"34percent"];
         [pic setImage:image];
         
-        infoText.text = @"Her first hurdle in the race for president is the candidate from her own party: Bernie Sanders.";
+        infoText.text = @"Hillary Clinton is currently leading the race for the Democratic nominee for president. She has 2,205 delegates and only needs 178 of the remaining 1,159 to win the nomination.";
     }
     else if ([_candidateSelected isEqualToString:@"Bernie Sanders"])
     {
         UIImage *image = [UIImage imageNamed:@"38percent"];
         [pic setImage:image];
         
-        infoText.text = @"His first hurdle in the race for president is the candidate from his own party: Hillary Clinton.";
+        infoText.text = @"His first hurdle in the race for president is the candidate from his own party: Hillary Clinton. Sanders has 1,401 delegates, which leaves him trailing significantly behind his opposition. He needs 2,383 delegates to win the nomination.";
     }
     else if ([_candidateSelected isEqualToString:@"Ted Cruz"])
     {
         UIImage *image = [UIImage imageNamed:@"4percent"];
         [pic setImage:image];
         
-        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: John Kasich and Donald Trump.";
+        infoText.text = @"Ted Cruz has just dropped out of the presidential election.";
     }
     else  //Donald Trump
     {
         UIImage *image = [UIImage imageNamed:@"4percent"];
         [pic setImage:image];
         
-        infoText.text = @"His first hurdle in the race for president is the candidates from his own party: Ted Cruz and John Kasich.";
+        infoText.text = @"Donald Trump is now the only remaining Republican candidate for president.";
     }
     
     infoText.font = [UIFont systemFontOfSize:17];
